@@ -4,7 +4,8 @@ import AuthContext from '../../context/authcontext';
 import { useNavigate } from 'react-router-dom';
 
 function LogoutBTN()
-{   const {getLoggedin} = useContext(AuthContext);
+{   
+    const {getLoggedin} = useContext(AuthContext);
 const navigate = useNavigate();
 
     async function logout()
